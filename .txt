@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "GSchrome.py", line 84, in <module>
+    unittest.main(verbosity=2)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/main.py", line 95, in __init__
+    self.runTests()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/main.py", line 232, in runTests
+    self.result = testRunner.run(self.test)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/runner.py", line 151, in run
+    test(result)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py", line 70, in __call__
+    return self.run(*args, **kwds)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py", line 108, in run
+    test(result)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py", line 70, in __call__
+    return self.run(*args, **kwds)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py", line 100, in run
+    self._handleClassSetUp(test, result)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py", line 146, in _handleClassSetUp
+    setUpClass()
+  File "GSchrome.py", line 36, in setUpClass
+    driver.maximize_window()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 485, in maximize_window
+    self.execute(Command.MAXIMIZE_WINDOW, {"windowHandle": "current"})
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 173, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 349, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 380, in _request
+    resp = self._conn.getresponse()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1045, in getresponse
+    response.begin()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 409, in begin
+    version, status, reason = self._read_status()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 365, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+KeyboardInterrupt
